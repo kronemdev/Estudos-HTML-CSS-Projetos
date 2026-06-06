@@ -72,6 +72,9 @@ main {
     padding: 30px;
     box-sizing: border-box;
     border-radius: 8px;
+    margin-left: 5%;
+    overflow-wrap: break-word;
+    
 }
 .bloco-imagem-texto p {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -85,9 +88,10 @@ main {
 
 @media (max-width: 700px) {
     .bloco-imagem-texto {
-        min-height: 50vh; 
+        min-height: auto; 
         background-attachment: scroll; 
         padding: 40px 20px; 
+        justify-content: center;
         box-sizing: border-box;
     }
     .bloco-imagem-texto::before {
@@ -97,8 +101,10 @@ main {
         top: 0;
     }
     .bloco-imagem-texto div {
-        width: 50%;
-        max-width: 200px;
+        width: 100%;
+        max-width: 90%;
+        margin-left: 0;
+        padding: 20px;
       
     }
        .bloco-imagem-texto p {
